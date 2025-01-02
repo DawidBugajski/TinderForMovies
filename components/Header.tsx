@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 export default function Header() {
   return (
-    <header className='flex justify-between items-center py-4 sm:py-8 gap-8'>
+    <header className='flex justify-between items-center py-4 sm:py-8 gap-8 px-4'>
       <Link href='/'>
         <h1 className='text-2xl font-bold'>
           Tinder
