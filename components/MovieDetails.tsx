@@ -43,7 +43,13 @@ export default function MovieDetails({
       <div className='flex flex-col md:flex-row items-start gap-6'>
         <div className='relative w-full md:w-1/2'>
           <div className='h-[400px] sm:h-[600px]'>
-            <Image src={imageURL} alt={title} fill className='object-cover' />
+            <Image
+              src={imageURL}
+              alt={title}
+              fill
+              className='object-cover'
+              priority
+            />
           </div>
           <div className='absolute bottom-0 left-0 w-full bg-black bg-opacity-60 py-3 flex justify-between items-center px-6'>
             <ActionButtons />
