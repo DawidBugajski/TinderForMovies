@@ -7,6 +7,7 @@ import {
   resetMovies,
 } from '@/lib/features/movies/moviesSlice';
 import { useLocalStorage } from '@/hooks/useLocalStorage';
+import LoadingDots from '@/components/LoadingDots';
 
 export default function TinderMovies() {
   const dispatch = useAppDispatch();
@@ -17,11 +18,7 @@ export default function TinderMovies() {
   const isHydrated = useLocalStorage();
 
   if (!isHydrated) {
-    return (
-      <div className='text-center mt-10'>
-        <h1 className='text-xl font-bold text-gray-800'>Loading...</h1>
-      </div>
-    );
+    return <LoadingDots />;
   }
 
   if (currentIndex >= movies.length) {
