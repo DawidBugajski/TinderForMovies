@@ -19,3 +19,27 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.bouncing-loader > div {
+  width: 50px;
+  height: 50px;
+  margin: 3px 6px;
+  border-radius: 50%;
+  background-image: linear-gradient(120deg, #52a897, #a0d5e4 100%);
+  opacity: 1;
+  animation: bouncing-loader 0.6s infinite alternate;
+}
+@keyframes bouncing-loader {
+  to {
+    opacity: 0.1;
+    transform: translateY(-16px);
+  }
+}
+
+.bouncing-loader > div:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.bouncing-loader > div:nth-child(3) {
+  animation-delay: 0.4s;
+}
