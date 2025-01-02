@@ -44,7 +44,7 @@ export default function TinderMovies() {
   const currentMovie = movies[currentIndex];
 
   return (
-    <div className='max-w-md mx-auto p-4 bg-gray-900 text-white rounded-lg shadow-md'>
+    <div className='max-w-screen-md mx-auto p-4 bg-gray-900 text-white rounded-lg shadow-md font-[family-name:var(--font-geist-mono)] flex flex-col'>
       <Image
         src={currentMovie.imageURL}
         alt={currentMovie.title}
