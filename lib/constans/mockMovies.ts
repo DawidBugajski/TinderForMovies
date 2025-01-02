@@ -3,8 +3,7 @@ import { v4 as uuidv4 } from 'uuid';
 export const MOCK_MOVIES = [
   {
     id: uuidv4(),
-    imageURL:
-      'https://upload.wikimedia.org/wikipedia/en/a/a2/Star_Wars_The_Force_Awakens_Theatrical_Poster.jpg',
+    imageURL: '/movies/starwars.webp',
     title: 'Star Wars: Episode VII - The Force Awakens',
     summary:
       'As a new threat to the galaxy rises, Rey, a desert scavenger, and Finn, an ex-stormtrooper, must join Han Solo and Chewbacca to search for the one hope of restoring peace.',
@@ -42,8 +41,7 @@ export const MOCK_MOVIES = [
   },
   {
     id: uuidv4(),
-    imageURL:
-      'https://upload.wikimedia.org/wikipedia/en/0/0d/Avengers_Endgame_poster.jpg',
+    imageURL: '/movies/avengers.webp',
     title: 'Avengers: Endgame',
     summary:
       'After the devastating events of Avengers: Infinity War, the Avengers assemble once more to reverse Thanos’ actions and restore balance to the universe.',
@@ -81,8 +79,7 @@ export const MOCK_MOVIES = [
   },
   {
     id: uuidv4(),
-    imageURL:
-      'https://upload.wikimedia.org/wikipedia/en/e/ed/Toy_Story_4_poster.jpg',
+    imageURL: '/movies/toystory4.webp',
     title: 'Toy Story 4',
     summary:
       'When a new toy named Forky joins Woody and the gang, a road trip alongside old and new friends reveals how big the world can be for a toy.',
@@ -120,8 +117,7 @@ export const MOCK_MOVIES = [
   },
   {
     id: uuidv4(),
-    imageURL:
-      'https://upload.wikimedia.org/wikipedia/en/6/69/Black_Panther_film_poster.jpg',
+    imageURL: '/movies/black_panther.webp',
     title: 'Black Panther',
     summary:
       'T’Challa, heir to the hidden but advanced kingdom of Wakanda, must step forward to lead his people into a new future and must confront a challenger from his country’s past.',
@@ -159,8 +155,7 @@ export const MOCK_MOVIES = [
   },
   {
     id: uuidv4(),
-    imageURL:
-      'https://upload.wikimedia.org/wikipedia/en/8/8a/Inception_%282010%29_theatrical_poster.jpg',
+    imageURL: '/movies/incepcion.webp',
     title: 'Inception',
     summary:
       'A thief who steals corporate secrets through the use of dream-sharing technology is given the inverse task of planting an idea into the mind of a CEO.',
@@ -198,8 +193,7 @@ export const MOCK_MOVIES = [
   },
   {
     id: uuidv4(),
-    imageURL:
-      'https://upload.wikimedia.org/wikipedia/en/5/50/Interstellar_film_poster.jpg',
+    imageURL: '/movies/interstellar.webp',
     title: 'Interstellar',
     summary:
       'A team of explorers travel through a wormhole in space in an attempt to ensure humanity’s survival.',
@@ -237,8 +231,7 @@ export const MOCK_MOVIES = [
   },
   {
     id: uuidv4(),
-    imageURL:
-      'https://upload.wikimedia.org/wikipedia/en/a/a9/The_Dark_Knight_%282008_film%29_poster.jpg',
+    imageURL: '/movies/dark_knight.webp',
     title: 'The Dark Knight',
     summary:
       'When the menace known as the Joker emerges from his mysterious past, he wreaks havoc and chaos on the people of Gotham.',
@@ -276,8 +269,7 @@ export const MOCK_MOVIES = [
   },
   {
     id: uuidv4(),
-    imageURL:
-      'https://upload.wikimedia.org/wikipedia/en/7/7a/The_Shawshank_Redemption.jpg',
+    imageURL: '/movies/shawshank.webp',
     title: 'The Shawshank Redemption',
     summary:
       'Two imprisoned men bond over a number of years, finding solace and eventual redemption through acts of common decency.',
@@ -315,8 +307,7 @@ export const MOCK_MOVIES = [
   },
   {
     id: uuidv4(),
-    imageURL:
-      'https://upload.wikimedia.org/wikipedia/en/c/c3/Titanic_poster.jpg',
+    imageURL: '/movies/titanic.webp',
     title: 'Titanic',
     summary:
       'A seventeen-year-old aristocrat falls in love with a kind but poor artist aboard the luxurious, ill-fated R.M.S. Titanic.',
@@ -354,8 +345,7 @@ export const MOCK_MOVIES = [
   },
   {
     id: uuidv4(),
-    imageURL:
-      'https://upload.wikimedia.org/wikipedia/en/9/95/Forrest_Gump_poster.jpg',
+    imageURL: '/movies/forest_gump.webp',
     title: 'Forrest Gump',
     summary:
       'The presidencies of Kennedy and Johnson, the Vietnam War, and other historical events unfold through the perspective of an Alabama man with an IQ of 75.',
@@ -393,8 +383,7 @@ export const MOCK_MOVIES = [
   },
   {
     id: uuidv4(),
-    imageURL:
-      'https://upload.wikimedia.org/wikipedia/en/1/19/The_Lion_King_poster.jpg',
+    imageURL: '/movies/lion-king.webp',
     title: 'The Lion King',
     summary:
       'Lion prince Simba and his father are targeted by his bitter uncle, who wants to ascend the throne himself.',
@@ -432,8 +421,7 @@ export const MOCK_MOVIES = [
   },
   {
     id: uuidv4(),
-    imageURL:
-      'https://upload.wikimedia.org/wikipedia/en/a/a5/La_La_Land_%28film%29.png',
+    imageURL: '/movies/laland.webp',
     title: 'La La Land',
     summary:
       'While navigating their careers in Los Angeles, a pianist and an actress fall in love while attempting to reconcile their aspirations for the future.',
