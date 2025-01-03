@@ -14,7 +14,7 @@ export default function ReviewComplete({
 
   return (
     <div className='text-center mt-10'>
-      <h1 className='text-2xl sm:text-4xl font-bold'>
+      <h1 className='text-2xl sm:text-4xl font-bold font-[family-name:var(--font-geist-mono)]'>
         You have reviewed all movies!
       </h1>
       <p className='mt-4'>Liked Movies: {likedMovies}</p>

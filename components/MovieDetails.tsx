@@ -1,6 +1,6 @@
-import Image from 'next/image';
 import { Movie } from '@/types';
 import ActionButtons from '@/components/ActionButtons';
+import DynamicImage from '@/components/DynamicImage';
 
 const formatCurrency = (value: number): string => `$${value.toLocaleString()}`;
 const formatList = (items: string[]): string => items.join(', ');
@@ -37,21 +37,17 @@ export default function MovieDetails({
 
   return (
     <div className='w-full max-w-screen-lg mx-auto p-6 relative'>
-      <h1 className='text-lg sm:text-3xl text-black dark:text-white font-bold text-center mb-4 font-[family-name:var(--font-geist-mono)]'>
-        {title} <span className='text-lg'>({ratings.imdb}/10)</span>
-      </h1>
+      <div className='relative'>
+        <span className='hidden xl:block absolute -left-[2%] -top-[25%] h-1/3 w-1 bg-green-600'></span>
+        <span className='hidden xl:block absolute -left-[2%] -top-[25%] h-1 w-6 bg-green-600 translate-y-[-50%]'></span>
+        <h1 className='text-lg sm:text-3xl text-black dark:text-white font-bold text-center mb-8 font-[family-name:var(--font-geist-mono)] relative inline-block'>
+          {title} <span className='text-lg'>({ratings.imdb}/10)</span>
+        </h1>
+      </div>
       <div className='flex flex-col md:flex-row items-start gap-6'>
         <div className='relative w-full md:w-1/2 border-4 border-green-600'>
           <div className='h-[400px] sm:h-[600px]'>
-            <Image
-              src={imageURL}
-              alt={title}
-              fill
-              className='object-cover'
-              priority
-              placeholder='blur'
-              blurDataURL={imageURL}
-            />
+            <DynamicImage src={imageURL} alt={title} key={imageURL} />
           </div>
           <div className='absolute bottom-0 left-0 w-full bg-black bg-opacity-60 py-3 flex justify-between items-center px-6'>
             <ActionButtons />
