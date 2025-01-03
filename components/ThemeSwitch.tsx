@@ -18,6 +18,8 @@ export default function ThemeSwitch() {
   if (resolvedTheme === 'dark') {
     return (
       <FaSun
+        aria-label='Switch to light mode'
+        role='button'
         className='w-6 h-6 text-white  hover:text-green transition-colors duration-150 cursor-pointer'
         onClick={() => setTheme('light')}
       />
@@ -27,6 +29,8 @@ export default function ThemeSwitch() {
   if (resolvedTheme === 'light') {
     return (
       <FaMoon
+        aria-label='Switch to dark mode'
+        role='button'
         className='w-6 h-6 text-black hover:text-green transition-colors duration-150 cursor-pointer'
         onClick={() => setTheme('dark')}
       />

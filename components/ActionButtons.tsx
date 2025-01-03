@@ -10,12 +10,14 @@ export default function ActionButtons() {
   return (
     <div className='flex justify-between w-full'>
       <button
+        data-testid='dislike-button'
         onClick={() => dispatch(dislikeMovie())}
         className='bg-red-500 text-white px-4 py-2 rounded-lg hover:bg-red-600 transition-colors'
       >
         <FaThumbsDown className='w-6 h-6' />
       </button>
       <button
+        data-testid='like-button'
         onClick={() => dispatch(likeMovie())}
         className='bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-600 transition-colors'
       >
