@@ -36,12 +36,12 @@ export default function MovieDetails({
   ];
 
   return (
-    <div className='w-full max-w-screen-lg mx-auto shadow-md dark:shadow-black p-6 relative'>
-      <h1 className='text-xl sm:text-2xl text-black dark:text-white font-bold text-center mb-4'>
+    <div className='w-full max-w-screen-lg mx-auto p-6 relative'>
+      <h1 className='text-lg sm:text-3xl text-black dark:text-white font-bold text-center mb-4 font-[family-name:var(--font-geist-mono)]'>
         {title} <span className='text-lg'>({ratings.imdb}/10)</span>
       </h1>
       <div className='flex flex-col md:flex-row items-start gap-6'>
-        <div className='relative w-full md:w-1/2'>
+        <div className='relative w-full md:w-1/2 border-4 border-green-600'>
           <div className='h-[400px] sm:h-[600px]'>
             <Image
               src={imageURL}
@@ -49,6 +49,8 @@ export default function MovieDetails({
               fill
               className='object-cover'
               priority
+              placeholder='blur'
+              blurDataURL={imageURL}
             />
           </div>
           <div className='absolute bottom-0 left-0 w-full bg-black bg-opacity-60 py-3 flex justify-between items-center px-6'>

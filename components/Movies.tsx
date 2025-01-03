@@ -27,7 +27,7 @@ export default function TinderMovies() {
   const currentMovie = movies[currentIndex];
 
   return (
-    <div className='w-full mx-auto p-4 rounded-lg flex flex-col'>
+    <div className='w-full mx-auto p-4 flex flex-col'>
       <MovieDetails movie={currentMovie} />
     </div>
   );
