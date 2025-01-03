@@ -40,7 +40,7 @@ export default function MovieDetails({
       <div className='relative'>
         <span className='hidden xl:block absolute -left-[2%] -top-[25%] h-1/3 w-1 bg-green-600'></span>
         <span className='hidden xl:block absolute -left-[2%] -top-[25%] h-1 w-6 bg-green-600 translate-y-[-50%]'></span>
-        <h1 className='text-lg sm:text-3xl text-black dark:text-white font-bold text-center mb-8 font-[family-name:var(--font-geist-mono)] relative inline-block'>
+        <h1 className='w-full text-lg sm:text-3xl text-black dark:text-white font-bold text-center mb-8 font-[family-name:var(--font-geist-mono)] relative inline-block'>
           {title} <span className='text-lg'>({ratings.imdb}/10)</span>
         </h1>
       </div>
