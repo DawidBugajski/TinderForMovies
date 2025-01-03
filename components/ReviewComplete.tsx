@@ -2,6 +2,7 @@
 
 import { useAppDispatch } from '@/lib/hooks';
 import { resetMovies } from '@/lib/features/movies/moviesSlice';
+import Button from './Button';
 
 export default function ReviewComplete({
   likedMovies,
@@ -19,12 +20,13 @@ export default function ReviewComplete({
       </h1>
       <p className='mt-4'>Liked Movies: {likedMovies}</p>
       <p className='mb-6'>Disliked Movies: {dislikedMovies}</p>
-      <button
+      <Button
+        className='mx-auto'
+        variant='reset'
         onClick={() => dispatch(resetMovies())}
-        className='bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 transition-colors'
       >
         Reset
-      </button>
+      </Button>
     </div>
   );
 }

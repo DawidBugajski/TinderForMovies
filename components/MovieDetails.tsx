@@ -46,7 +46,7 @@ export default function MovieDetails({
       </div>
       <div className='flex flex-col md:flex-row items-start gap-6'>
         <div className='relative w-full md:w-1/2 border-4 border-green-600'>
-          <div className='h-[400px] sm:h-[600px]'>
+          <div className='h-[400px] sm:h-[600px] relative'>
             <DynamicImage src={imageURL} alt={title} key={imageURL} />
           </div>
           <div className='absolute bottom-0 left-0 w-full bg-black bg-opacity-60 py-3 flex justify-between items-center px-6'>
